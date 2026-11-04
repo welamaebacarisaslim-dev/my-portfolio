@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4A1519"/>
+      <stop offset="100%" stop-color="#2D0C0E"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fed7b8"/>
+      <stop offset="100%" stop-color="#E8B898"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+  
+  <!-- Terminal window chrome -->
+  <rect x="30" y="24" width="540" height="292" rx="12" fill="#1C0708" stroke="rgba(254, 215, 184, 0.2)" stroke-width="1.5"/>
+  <rect x="30" y="24" width="540" height="36" rx="12" fill="rgba(89, 23, 27, 0.4)"/>
+  <circle cx="52" cy="42" r="5" fill="#E85D5D"/>
+  <circle cx="70" cy="42" r="5" fill="#E8B85D"/>
+  <circle cx="88" cy="42" r="5" fill="#5DE88B"/>
+  <text x="300" y="46" font-family="'Plus Jakarta Sans', monospace, sans-serif" font-size="12" font-weight="600" fill="#C0907A" text-anchor="middle">task_queuer_fcfs.py — CPU Scheduler</text>
+  
+  <!-- Terminal content -->
+  <text x="56" y="90" font-family="'Courier New', monospace" font-size="13" fill="#fed7b8">&gt; python scheduler.py --algorithm FCFS</text>
+  <text x="56" y="114" font-family="'Courier New', monospace" font-size="12" fill="#C0907A">[+] Queue Initialized: 4 Processes loaded</text>
+  
+  <!-- Gantt Chart container -->
+  <rect x="56" y="136" width="488" height="60" rx="8" fill="rgba(89, 23, 27, 0.35)" stroke="rgba(254, 215, 184, 0.15)"/>
+  
+  <!-- Process blocks -->
+  <rect x="62" y="142" width="110" height="48" rx="6" fill="url(#bar1)"/>
+  <text x="117" y="171" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#59171b" text-anchor="middle">P1 (4ms)</text>
+  
+  <rect x="178" y="142" width="150" height="48" rx="6" fill="#7A2228" stroke="rgba(254, 215, 184, 0.3)"/>
+  <text x="253" y="171" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFF0E8" text-anchor="middle">P2 (7ms)</text>
+  
+  <rect x="334" y="142" width="90" height="48" rx="6" fill="#59171b" stroke="rgba(254, 215, 184, 0.25)"/>
+  <text x="379" y="171" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#fed7b8" text-anchor="middle">P3 (3ms)</text>
+  
+  <rect x="430" y="142" width="108" height="48" rx="6" fill="rgba(254, 215, 184, 0.15)" stroke="rgba(254, 215, 184, 0.3)"/>
+  <text x="484" y="171" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#fed7b8" text-anchor="middle">P4 (5ms)</text>
+  
+  <!-- Timeline labels -->
+  <text x="62" y="214" font-family="monospace" font-size="10" fill="#C0907A">0ms</text>
+  <text x="174" y="214" font-family="monospace" font-size="10" fill="#C0907A">4ms</text>
+  <text x="328" y="214" font-family="monospace" font-size="10" fill="#C0907A">11ms</text>
+  <text x="424" y="214" font-family="monospace" font-size="10" fill="#C0907A">14ms</text>
+  <text x="532" y="214" font-family="monospace" font-size="10" fill="#C0907A">19ms</text>
+  
+  <!-- Metrics output -->
+  <text x="56" y="250" font-family="'Courier New', monospace" font-size="12" fill="#5DE88B">&#10003; Average Waiting Time: 7.25 ms</text>
+  <text x="56" y="272" font-family="'Courier New', monospace" font-size="12" fill="#5DE88B">&#10003; Average Turnaround: 12.00 ms</text>
+  <text x="56" y="294" font-family="'Courier New', monospace" font-size="12" fill="#fed7b8">&gt; Execution complete. CPU idle.</text>
+</svg>
+
