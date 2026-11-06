@@ -686,112 +686,67 @@ button {
 
 .hero__eyebrow {
   font-family: var(--font-cursive);
-  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-size: clamp(2.4rem, 4.5vw, 3.4rem);
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 2px;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
+  margin-bottom: 0.15rem;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
   text-shadow: 0 2px 12px rgba(254, 215, 184, 0.25);
   animation: heroFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
 }
 
 .hero__name {
   font-family: var(--font-serif);
-  font-size: clamp(2.05rem, 4.2vw, 3.6rem);
-  font-weight: 700;
+  font-size: clamp(2.6rem, 5.2vw, 4.2rem);
+  font-weight: 800;
   color: #FFF2E7;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  line-height: 1.15;
-  margin-bottom: 14px;
-  white-space: nowrap;
+  letter-spacing: 0.05em;
+  line-height: 1.08;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 35px rgba(254, 215, 184, 0.22);
   animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
 }
 
-/* Reference Photo 2 Design: Role line & Star ornament */
-.hero__name-design {
+/* Reference Design: Role & Horizontal Divider Line */
+.hero__role-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 24px;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
   animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
 }
 
-.hero__role-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  width: 100%;
-  max-width: 520px;
-}
-
-.hero__role-line {
-  flex: 1;
-  height: 1px;
-}
-
-.hero__role-line--left {
-  background: linear-gradient(90deg, transparent 0%, rgba(254, 215, 184, 0.65) 100%);
-}
-
-.hero__role-line--right {
-  background: linear-gradient(90deg, rgba(254, 215, 184, 0.65) 0%, transparent 100%);
-}
-
-.hero__role-badge,
-.hero__role-text {
+.hero__role-title {
   font-family: var(--font-display);
-  font-size: clamp(0.76rem, 1.2vw, 0.90rem);
-  font-weight: 600;
-  letter-spacing: 0.26em;
+  font-size: clamp(0.92rem, 1.4vw, 1.12rem);
+  font-weight: 800;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-primary);
-  white-space: nowrap;
 }
 
-.hero__star-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.star-ornament__line {
-  flex: 1;
-  height: 1px;
-}
-
-.star-ornament__line--left {
-  background: linear-gradient(90deg, transparent 0%, rgba(254, 215, 184, 0.45) 100%);
-}
-
-.star-ornament__line--right {
-  background: linear-gradient(90deg, rgba(254, 215, 184, 0.45) 0%, transparent 100%);
-}
-
-.star-ornament__star {
-  font-size: 0.85rem;
-  color: var(--color-primary);
-  line-height: 1;
-  filter: drop-shadow(0 0 6px rgba(254, 215, 184, 0.85));
-  animation: sparkleTwinkle 3s ease-in-out infinite;
+.hero__role-divider {
+  display: block;
+  width: clamp(230px, 32vw, 310px);
+  height: 2px;
+  background: var(--color-primary);
+  margin-top: 8px;
+  border-radius: 2px;
+  opacity: 0.85;
 }
 
 .hero__intro {
   font-family: var(--font-body);
-  font-size: 1.02rem;
-  color: var(--color-text-muted);
-  line-height: 1.7;
-  max-width: 530px;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  color: var(--color-text-body);
+  line-height: 1.65;
+  max-width: 480px;
   margin-bottom: 0;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.50s both;
 }
 
@@ -916,13 +871,13 @@ button {
   font-size: 0.8rem;
 }
 
-/* Right Column: Luxury Arch Portrait */
+/* Right Column: Frameless Editorial Portrait with Organic Wave Backdrop */
 .hero__visual {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -931,53 +886,66 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  max-width: 420px;
+  max-width: 490px;
   animation: heroPopIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
 }
 
-/* Ambient backdrop halo */
-.hero__portrait-backdrop {
+/* Organic curved backdrop matching reference */
+.hero__portrait-wave-bg {
   position: absolute;
-  top: 4%;
-  left: 3%;
-  right: 3%;
-  bottom: 8%;
-  background: radial-gradient(circle at center, rgba(254, 215, 184, 0.38) 0%, rgba(89, 23, 27, 0.35) 65%, transparent 100%);
-  border-radius: 50%;
-  filter: blur(34px);
+  top: -20px;
+  right: -35px;
+  width: 110%;
+  height: 108%;
   z-index: 1;
-  animation: haloPulse 6s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.95;
 }
 
-/* Architectural Luxury Arch Frame */
+.hero__portrait-wave-bg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero__wave-shape {
+  fill: url(#heroBgGradDark);
+}
+
+[data-theme="light"] .hero__wave-shape {
+  fill: url(#heroBgGradLight);
+}
+
+/* Frameless portrait */
 .hero__portrait-frame {
   position: relative;
   z-index: 2;
   width: 100%;
-  aspect-ratio: 1 / 1.18;
-  max-height: 480px;
-  border-radius: 200px 200px 32px 32px;
-  background: linear-gradient(180deg, #59171B 0%, #3B0D10 55%, #260709 100%);
-  border: 2px solid rgba(254, 215, 184, 0.28);
-  box-shadow: var(--shadow-lg), 0 0 0 8px rgba(254, 215, 184, 0.08);
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: visible;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .hero__portrait-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+  object-position: bottom center;
   display: block;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.30));
   transition: transform var(--transition-norm);
 }
 
 .hero__portrait-frame:hover .hero__portrait-img {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 /* Layered Wave Divider */
@@ -2197,15 +2165,34 @@ button {
 
   .hero__content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__role-wrapper {
+    align-items: center;
+  }
+
+  .hero__intro {
+    text-align: center;
+    margin-inline: auto;
   }
 
   .hero__visual {
     order: 2;
+    justify-content: center;
   }
 
   .hero__portrait-wrapper {
     max-width: 340px;
     margin-inline: auto;
+  }
+
+  .hero__portrait-wave-bg {
+    right: -15px;
+    width: 108%;
   }
 
   .project-featured {
@@ -2497,29 +2484,26 @@ button {
 
 /* Hero Typography & Accents in Light Mode */
 [data-theme="light"] .hero__name {
-  color: #2A0609;
+  color: #3B0D10;
   text-shadow: none;
 }
 
 [data-theme="light"] .hero__eyebrow {
-  color: #59171B;
+  color: #8E4349;
+  text-shadow: none;
 }
 
 [data-theme="light"] .hero__intro {
-  color: #381216;
+  color: #4A1518;
 }
 
-[data-theme="light"] .hero__role-badge,
-[data-theme="light"] .hero__role-text {
-  color: #59171B;
+[data-theme="light"] .hero__role-title {
+  color: #3B0D10;
 }
 
-[data-theme="light"] .hero__role-line--left {
-  background: linear-gradient(90deg, transparent 0%, rgba(89, 23, 27, 0.35) 100%);
-}
-
-[data-theme="light"] .hero__role-line--right {
-  background: linear-gradient(90deg, rgba(89, 23, 27, 0.35) 0%, transparent 100%);
+[data-theme="light"] .hero__role-divider {
+  background: #59171B;
+  opacity: 1;
 }
 
 [data-theme="light"] .star-ornament__line--left {
