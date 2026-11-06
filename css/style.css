@@ -3026,6 +3026,48 @@ button {
 }
 
 /* --------------------------------------------------------------------------
+   SECTION WAVE DIVIDERS
+   -------------------------------------------------------------------------- */
+.section__wave-divider {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  margin-top: 3rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.section__wave-divider svg {
+  display: block;
+  width: 100%;
+  height: clamp(32px, 4vw, 60px);
+}
+
+[data-theme="light"] .section__wave-divider path {
+  stroke: #59171B;
+  opacity: 0.35;
+}
+
+/* --------------------------------------------------------------------------
+   LOGO LIGHT MODE FIX
+   -------------------------------------------------------------------------- */
+[data-theme="light"] .nav__logo-img,
+[data-theme="light"] .footer__logo-img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(50%) saturate(1200%) hue-rotate(320deg) brightness(0.75);
+}
+
+/* --------------------------------------------------------------------------
+   CONTACT CARD — no banner adjustments
+   -------------------------------------------------------------------------- */
+.contact__card-body .contact__icon {
+  margin-top: 0;
+}
+
+.contact__card-banner {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
    15. ACCESSIBILITY & PERFORMANCE
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {

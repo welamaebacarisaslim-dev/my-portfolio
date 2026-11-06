@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Wela Mae B. Lim — Aspiring Web Developer and BS Computer Science student at Biliran Province State University." />
+  <meta name="description"
+    content="Portfolio of Wela Mae B. Lim — Aspiring Web Developer and BS Computer Science student at Biliran Province State University." />
   <meta name="theme-color" content="#59171B" />
   <title>Wela Mae B. Lim — Portfolio</title>
   <script>
-    (function() {
+    (function () {
       try {
         const saved = localStorage.getItem('wmbl-theme');
         if (saved === 'light') {
@@ -15,16 +17,19 @@
         } else {
           document.documentElement.setAttribute('data-theme', 'dark');
         }
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
   <link rel="icon" type="image/svg+xml" href="assets/images/wmbl-logo.svg" />
   <link rel="apple-touch-icon" href="assets/images/wmbl-logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -46,19 +51,16 @@
           <li><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
 
-        <button
-          class="theme-toggle-btn"
-          id="themeToggle"
-          type="button"
-          aria-label="Toggle light or dark theme"
-          title="Toggle Light / Dark Mode"
-        >
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Toggle light or dark theme"
+          title="Toggle Light / Dark Mode">
           <!-- Moon Icon (shown in dark mode) -->
-          <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
           <!-- Sun Icon (shown in light mode) -->
-          <svg class="theme-icon theme-icon--sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="theme-icon theme-icon--sun" width="19" height="19" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -71,14 +73,8 @@
           </svg>
         </button>
 
-        <button
-          class="nav__toggle"
-          id="navToggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="navMenu"
-          aria-label="Open navigation menu"
-        >
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu"
+          aria-label="Open navigation menu">
           <span class="hamburger" aria-hidden="true"></span>
         </button>
       </div>
@@ -93,9 +89,12 @@
       <div class="hero__decorations" aria-hidden="true">
         <!-- Top-left curved ribbon swirls -->
         <svg class="hero__swirl-left" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-50 -30 C 50 40, 160 90, 150 180 C 140 250, 40 270, -30 220" stroke="#59171B" stroke-width="40" stroke-linecap="round" opacity="0.45" />
-          <path d="M-30 -10 C 60 50, 140 100, 130 175 C 120 235, 30 245, -20 205" stroke="#FED7B8" stroke-width="3" stroke-linecap="round" opacity="0.8" />
-          <path d="M-15 10 C 70 60, 120 110, 110 165 C 100 215, 20 225, -10 190" stroke="#FFF2E7" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+          <path d="M-50 -30 C 50 40, 160 90, 150 180 C 140 250, 40 270, -30 220" stroke="#59171B" stroke-width="40"
+            stroke-linecap="round" opacity="0.45" />
+          <path d="M-30 -10 C 60 50, 140 100, 130 175 C 120 235, 30 245, -20 205" stroke="#FED7B8" stroke-width="3"
+            stroke-linecap="round" opacity="0.8" />
+          <path d="M-15 10 C 70 60, 120 110, 110 165 C 100 215, 20 225, -10 190" stroke="#FFF2E7" stroke-width="2"
+            stroke-linecap="round" opacity="0.9" />
         </svg>
 
         <!-- Left 4x3 dot grid -->
@@ -128,7 +127,8 @@
           </div>
 
           <p class="hero__intro">
-            A 4th year BSCS student at Biliran Province State University and an aspiring web developer. Exploring technology and growing one step at a time.
+            A 4th year BSCS student at Biliran Province State University and an aspiring web developer. Exploring
+            technology and growing one step at a time.
           </p>
         </div>
 
@@ -138,14 +138,8 @@
             <div class="hero__portrait-backdrop" aria-hidden="true"></div>
 
             <div class="hero__portrait-frame">
-              <img
-                class="hero__portrait-img"
-                src="assets/images/wela-portrait.png"
-                alt="Portrait of Wela Mae B. Lim"
-                width="420"
-                height="480"
-                loading="eager"
-              />
+              <img class="hero__portrait-img" src="assets/images/wela-portrait.png" alt="Portrait of Wela Mae B. Lim"
+                width="420" height="480" loading="eager" />
             </div>
 
           </div>
@@ -156,11 +150,15 @@
       <div class="hero__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 180" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <!-- Peach accent line -->
-          <path d="M 0,66 C 240,104 380,166 520,159 C 680,149 820,114 1020,117 C 1180,119 1300,104 1440,49" stroke="#fed7b8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.35" />
+          <path d="M 0,66 C 240,104 380,166 520,159 C 680,149 820,114 1020,117 C 1180,119 1300,104 1440,49"
+            stroke="#fed7b8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.35" />
           <!-- Wine crimson accent -->
-          <path d="M 0,70 C 240,108 380,170 520,163 C 680,153 820,118 1020,121 C 1180,123 1300,108 1440,53" stroke="#59171b" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
+          <path d="M 0,70 C 240,108 380,170 520,163 C 680,153 820,118 1020,121 C 1180,123 1300,108 1440,53"
+            stroke="#59171b" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
           <!-- Main wave fill matching about background -->
-          <path class="hero__wave-fill" d="M 0,72 C 240,110 380,172 520,165 C 680,155 820,120 1020,123 C 1180,125 1300,110 1440,55 L 1440,180 L 0,180 Z" fill="#3B0D10" />
+          <path class="hero__wave-fill"
+            d="M 0,72 C 240,110 380,172 520,165 C 680,155 820,120 1020,123 C 1180,125 1300,110 1440,55 L 1440,180 L 0,180 Z"
+            fill="#3B0D10" />
         </svg>
       </div>
     </section>
@@ -179,14 +177,16 @@
               Biliran Province State University, from Brgy.&nbsp;Parag-um, Carigara, Leyte.
             </p>
             <p>
-              My development journey started with <strong>Room Management</strong>, a simple CRUD 
-              application built using PHP, followed by <strong>Loan Tracker</strong> using Flutter and Dart, 
-              and <strong>Intoy's Chili Garlic Kitchen</strong>, developed using Python. My latest project is <strong>PrintDayon</strong>, 
-              a full-stack JavaScript web application that helps users find printing shops based on estimated completion time. 
+              My development journey started with <strong>Room Management</strong>, a simple CRUD
+              application built using PHP, followed by <strong>Loan Tracker</strong> using Flutter and Dart,
+              and <strong>Intoy's Chili Garlic Kitchen</strong>, developed using Python. My latest project is
+              <strong>PrintDayon</strong>,
+              a full-stack JavaScript web application that helps users find printing shops based on estimated completion
+              time.
               I'm continuously learning and improving my skills as an aspiring web developer.
             </p>
             <p>
-              Beyond technology, I enjoy cooking, spending time with my fur babies, 
+              Beyond technology, I enjoy cooking, spending time with my fur babies,
               reading wattpad, singing, and traveling.
             </p>
           </div>
@@ -202,8 +202,9 @@
             <div class="about__card">
               <h3 class="about__card-label">Career Goal</h3>
               <p>
-                My goal is to become a skilled web developer, 
-                continuously learn new technologies, and build useful, user-friendly websites while growing both personally and professionally.
+                My goal is to become a skilled web developer,
+                continuously learn new technologies, and build useful, user-friendly websites while growing both
+                personally and professionally.
               </p>
             </div>
 
@@ -212,29 +213,35 @@
               <ul class="about__interests" role="list">
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <path d="M6 13.84V21a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-7.16" />
                       <path d="M4 10h16a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z" />
-                      <path d="M12 4v6" /><path d="M8 6v4" /><path d="M16 6v4" />
+                      <path d="M12 4v6" />
+                      <path d="M8 6v4" />
+                      <path d="M16 6v4" />
                     </svg>
                   </span>
                   <span>Cooking &amp; trying new recipes</span>
                 </li>
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M12 14c-1.8 0-3.3 1.2-3.3 2.7 0 1.2 1 2.3 2.3 2.3.8 0 1-.3 1-.3s.2.3 1 .3c1.3 0 2.3-1.1 2.3-2.3 0-1.5-1.5-2.7-3.3-2.7z"/>
-                      <circle cx="8" cy="11.5" r="1.5"/>
-                      <circle cx="16" cy="11.5" r="1.5"/>
-                      <circle cx="10" cy="8.5" r="1.5"/>
-                      <circle cx="14" cy="8.5" r="1.5"/>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M12 14c-1.8 0-3.3 1.2-3.3 2.7 0 1.2 1 2.3 2.3 2.3.8 0 1-.3 1-.3s.2.3 1 .3c1.3 0 2.3-1.1 2.3-2.3 0-1.5-1.5-2.7-3.3-2.7z" />
+                      <circle cx="8" cy="11.5" r="1.5" />
+                      <circle cx="16" cy="11.5" r="1.5" />
+                      <circle cx="10" cy="8.5" r="1.5" />
+                      <circle cx="14" cy="8.5" r="1.5" />
                     </svg>
                   </span>
                   <span>Spending time with my fur babies</span>
                 </li>
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <path d="M9 18V5l12-2v13" />
                       <circle cx="6" cy="18" r="3" />
                       <circle cx="18" cy="16" r="3" />
@@ -244,7 +251,8 @@
                 </li>
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                       <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                     </svg>
@@ -253,7 +261,8 @@
                 </li>
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <path d="M22 2 11 13"></path>
                       <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                     </svg>
@@ -262,7 +271,8 @@
                 </li>
                 <li class="interest-item">
                   <span class="interest-icon" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
@@ -282,49 +292,48 @@
           </div>
           <div class="resume-showcase__main">
             <div class="resume-showcase__preview">
-              <img
-                src="assets/images/wela-resume.jpg"
-                alt="Curriculum Vitae / Resume sheet of Wela Mae B. Lim"
-                class="resume-showcase__img"
-                loading="lazy"
-              />
+              <img src="assets/images/wela-resume.jpg" alt="Curriculum Vitae / Resume sheet of Wela Mae B. Lim"
+                class="resume-showcase__img" loading="lazy" />
               <div class="resume-showcase__overlay">
-                <a
-                  class="btn btn--primary btn--sm"
-                  href="assets/images/wela-resume.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full resolution resume image"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="btn btn--primary btn--sm" href="assets/images/wela-resume.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full resolution resume image">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   Preview Image
                 </a>
               </div>
             </div>
             <div class="resume-showcase__info">
               <p class="resume-showcase__desc">
-                Get a comprehensive overview of my academic background at Biliran Province State University, 
-                development journey, professional seminar certifications, and technical skills. 
+                Get a comprehensive overview of my academic background at Biliran Province State University,
+                development journey, professional seminar certifications, and technical skills.
                 Available for viewing directly online or download as PDF.
               </p>
               <div class="resume-showcase__actions">
-                <a
-                  class="btn btn--primary"
-                  href="assets/docs/wela-resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Wela Mae B. Lim's resume PDF in a new tab"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <a class="btn btn--primary" href="assets/docs/wela-resume.pdf" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Wela Mae B. Lim's resume PDF in a new tab">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
                   View PDF Resume
                 </a>
-                <a
-                  class="btn btn--outline"
-                  href="assets/docs/wela-resume.pdf"
-                  download="Wela_Mae_Lim_Resume.pdf"
-                  aria-label="Download Wela Mae B. Lim's resume PDF"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <a class="btn btn--outline" href="assets/docs/wela-resume.pdf" download="Wela_Mae_Lim_Resume.pdf"
+                  aria-label="Download Wela Mae B. Lim's resume PDF">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
                   Download PDF
                 </a>
               </div>
@@ -332,29 +341,33 @@
           </div>
         </div>
       </div>
+
+      <!-- Section wave divider -->
+      <div class="section__wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="#59171B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
     </section>
 
     <section class="section projects" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section__header"><h2 class="section__title" id="projects-heading">Projects</h2></div>
+        <div class="section__header">
+          <h2 class="section__title" id="projects-heading">Projects</h2>
+        </div>
         <p class="section__subtitle">Things I have built through learning and coursework.</p>
 
         <article class="project-featured" aria-label="Featured project: PrintDayon">
 
           <div class="project-featured__gallery">
             <div class="project-featured__img-wrap">
-              <img
-                src="assets/images/project-printdayon.webp"
+              <img src="assets/images/project-printdayon.webp"
                 alt="PrintDayon customer portal dashboard showing recommended printing shops and customer orders"
-                loading="eager"
-              />
+                loading="eager" />
             </div>
             <div class="project-featured__img-wrap">
-              <img
-                src="assets/images/project-printdayon-map.jpg"
-                alt="PrintDayon Find Shops map view showing nearby printing shops in Naval, Biliran"
-                loading="lazy"
-              />
+              <img src="assets/images/project-printdayon-map.jpg"
+                alt="PrintDayon Find Shops map view showing nearby printing shops in Naval, Biliran" loading="lazy" />
             </div>
           </div>
 
@@ -372,7 +385,7 @@
             <div class="project__contribution">
               <h4>My Contribution</h4>
               <p>
-                Served as the Lead Researcher of PrintDayon, leading the research process, 
+                Served as the Lead Researcher of PrintDayon, leading the research process,
                 gathering relevant information, and ensuring the project is supported by reliable data and findings.
               </p>
             </div>
@@ -392,22 +405,13 @@
             </div>
 
             <div class="project__links">
-              <a
-                class="btn btn--primary btn--sm"
-                href="https://printdayon-thesis-production-2f2a.up.railway.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open PrintDayon live demo in a new tab"
-              >
+              <a class="btn btn--primary btn--sm" href="https://printdayon-thesis-production-2f2a.up.railway.app/"
+                target="_blank" rel="noopener noreferrer" aria-label="Open PrintDayon live demo in a new tab">
                 Live Demo &#8599;
               </a>
-              <a
-                class="btn btn--outline btn--sm"
-                href="https://github.com/mahalalilvillaflores-jpg/PrintDayonThesis"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View PrintDayon source code on GitHub in a new tab"
-              >
+              <a class="btn btn--outline btn--sm" href="https://github.com/mahalalilvillaflores-jpg/PrintDayonThesis"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View PrintDayon source code on GitHub in a new tab">
                 GitHub &#8599;
               </a>
             </div>
@@ -420,12 +424,9 @@
 
           <article class="project-card" aria-label="Project: Room Management">
             <div class="project-card__img-wrap">
-              <img
-                src="assets/images/project-room-management.webp"
+              <img src="assets/images/project-room-management.webp"
                 alt="Room Management System table showing room numbers, types, capacity, and action buttons"
-                class="project-card__img"
-                loading="lazy"
-              />
+                class="project-card__img" loading="lazy" />
             </div>
             <div class="project-card__body">
               <div class="project-card__header">
@@ -447,12 +448,9 @@
 
           <article class="project-card" aria-label="Project: Loan Tracker">
             <div class="project-card__img-wrap">
-              <img
-                src="assets/images/project-loan-tracker.webp"
+              <img src="assets/images/project-loan-tracker.webp"
                 alt="Loan Tracker Mobile Application displaying loan terms, interest rates, and repayment details"
-                class="project-card__img"
-                loading="lazy"
-              />
+                class="project-card__img" loading="lazy" />
             </div>
             <div class="project-card__body">
               <div class="project-card__header">
@@ -473,12 +471,9 @@
 
           <article class="project-card" aria-label="Project: Intoy's Chili Garlic Kitchen">
             <div class="project-card__img-wrap">
-              <img
-                src="assets/images/project-chili-garlic.jpg"
+              <img src="assets/images/project-chili-garlic.jpg"
                 alt="Intoy's Chili Garlic Kitchen administrative control panel showing recent orders and sales overview"
-                class="project-card__img"
-                loading="lazy"
-              />
+                class="project-card__img" loading="lazy" />
             </div>
             <div class="project-card__body">
               <div class="project-card__header">
@@ -500,12 +495,9 @@
 
           <article class="project-card" aria-label="Project: Task Queuer">
             <div class="project-card__img-wrap">
-              <img
-                src="assets/images/project-task-queuer.svg"
+              <img src="assets/images/project-task-queuer.svg"
                 alt="Task Queuer CPU Scheduling Simulation Preview showing FCFS Queue execution and metrics"
-                class="project-card__img"
-                loading="lazy"
-              />
+                class="project-card__img" loading="lazy" />
             </div>
             <div class="project-card__body">
               <div class="project-card__header">
@@ -525,18 +517,29 @@
 
         </div>
       </div>
+
+      <!-- Section wave divider -->
+      <div class="section__wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="#59171B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
     </section>
 
     <section class="section skills" id="skills" aria-labelledby="skills-heading">
       <div class="container">
-        <div class="section__header"><span class="section__tag">✦ Technical Stack</span><h2 class="section__title" id="skills-heading">Skills</h2></div>
+        <div class="section__header">
+          <h2 class="section__title" id="skills-heading">Skills</h2>
+        </div>
         <p class="section__subtitle">Technologies I have worked with through my projects.</p>
 
         <div class="skills__grid">
 
           <div class="skill-group">
             <h3 class="skill-group__title">
-              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
                 <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -545,35 +548,27 @@
             </h3>
             <ul class="skill-list" role="list">
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v18H3V3zm8.5 12.5c-.3.5-.8.8-1.5.8-1.1 0-1.8-.7-1.8-1.9v-3.4h1.5v3.4c0 .4.2.6.5.6.3 0 .5-.2.5-.5V11H11.7v4.5zm5.7-1.1c-.2.7-.9 1.2-1.9 1.2-1.3 0-2.1-.8-2.1-2.1 0-1.3.8-2.1 2.1-2.1.9 0 1.6.4 1.8 1.1l-1.3.6c-.1-.3-.3-.5-.6-.5-.5 0-.7.3-.7.9 0 .6.2.9.7.9.3 0 .5-.2.6-.5l1.4.5z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M3 3h18v18H3V3zm8.5 12.5c-.3.5-.8.8-1.5.8-1.1 0-1.8-.7-1.8-1.9v-3.4h1.5v3.4c0 .4.2.6.5.6.3 0 .5-.2.5-.5V11H11.7v4.5zm5.7-1.1c-.2.7-.9 1.2-1.9 1.2-1.3 0-2.1-.8-2.1-2.1 0-1.3.8-2.1 2.1-2.1.9 0 1.6.4 1.8 1.1l-1.3.6c-.1-.3-.3-.5-.6-.5-.5 0-.7.3-.7.9 0 .6.2.9.7.9.3 0 .5-.2.6-.5l1.4.5z" />
+                </svg>
                 <span>JavaScript</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/></svg>
-                <span>React</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3l1.8 15.6L12 21l6.2-2.4L20 3H4zm13.1 4.5l-.2 2.5H9.6l.2 2h7l-.6 6-4.2 1.2-4.2-1.2-.3-3.2h2.2l.2 1.4 2.1.6 2.1-.6.3-2.5H7.7L7 7.5h10.1z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M4 3l1.8 15.6L12 21l6.2-2.4L20 3H4zm13.1 4.5l-.2 2.5H9.6l.2 2h7l-.6 6-4.2 1.2-4.2-1.2-.3-3.2h2.2l.2 1.4 2.1.6 2.1-.6.3-2.5H7.7L7 7.5h10.1z" />
+                </svg>
                 <span>HTML5</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3l1.8 15.6L12 21l6.2-2.4L20 3H4zm12.3 4.5l-.2 2.5H8.7l.2 2h7.2l-.7 7-5.4 1.5-5.4-1.5-.4-4h2.2l.2 2.1 3.4.9 3.4-.9.4-3.8H7.9L7 7.5h9.3z"/></svg>
-                <span>CSS3</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4l10 2-4 8 8 6-14-2V4z"/><path d="M14 6l6 6-8 8"/></svg>
-                <span>Dart</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.3 2.5L5.7 11.1l3.2 3.2 11.8-11.8H14.3zm0 9.6L9.6 16.8l4.7 4.7h6.4l-7.9-7.9 3.2-3.2 4.7 4.7 3.2-3.2-9.6-9.6h-0.4z"/></svg>
-                <span>Flutter</span>
               </li>
             </ul>
           </div>
 
           <div class="skill-group">
             <h3 class="skill-group__title">
-              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false">
                 <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
                 <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
                 <line x1="6" y1="6" x2="6.01" y2="6"></line>
@@ -583,19 +578,18 @@
             </h3>
             <ul class="skill-list" role="list">
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8.5 5v10L12 22l-8.5-5V7L12 2z"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M12 2l8.5 5v10L12 22l-8.5-5V7L12 2z" />
+                  <circle cx="12" cy="12" r="3" fill="currentColor" />
+                </svg>
                 <span>Node.js</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                <span>Express</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M8 10v4M8 10h2a1.5 1.5 0 0 1 0 3H8M12 10v4M12 12h2a1 1 0 0 0 0-2h-2M16 10v4M16 10h2a1.5 1.5 0 0 1 0 3h-2"/></svg>
-                <span>PHP</span>
-              </li>
-              <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.9 2c-3.1 0-2.9 1.3-2.9 1.3l.1 1.4h2.9v.4H6.2S4 4.8 4 8s1.9 3.2 1.9 3.2h1.1V9.7c0-1.2 1.1-1.2 1.1-1.2h4.8s1.1 0 1.1-1.1V4.2c0-1.1-1-2.2-2.1-2.2zm-1.6 1.1c.3 0 .6.3.6.6s-.3.6-.6.6-.6-.3-.6-.6.3-.6.6-.6zm1.8 18.9c3.1 0 2.9-1.3 2.9-1.3l-.1-1.4h-2.9v-.4h5.8s2.2.3 2.2-2.9-1.9-3.2-1.9-3.2h-1.1v1.5c0 1.2-1.1 1.2-1.1 1.2h-4.8s-1.1 0-1.1 1.1v3.2c0 1.1 1 2.2 2.1 2.2zm1.6-1.1c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M11.9 2c-3.1 0-2.9 1.3-2.9 1.3l.1 1.4h2.9v.4H6.2S4 4.8 4 8s1.9 3.2 1.9 3.2h1.1V9.7c0-1.2 1.1-1.2 1.1-1.2h4.8s1.1 0 1.1-1.1V4.2c0-1.1-1-2.2-2.1-2.2zm-1.6 1.1c.3 0 .6.3.6.6s-.3.6-.6.6-.6-.3-.6-.6.3-.6.6-.6zm1.8 18.9c3.1 0 2.9-1.3 2.9-1.3l-.1-1.4h-2.9v-.4h5.8s2.2.3 2.2-2.9-1.9-3.2-1.9-3.2h-1.1v1.5c0 1.2-1.1 1.2-1.1 1.2h-4.8s-1.1 0-1.1 1.1v3.2c0 1.1 1 2.2 2.1 2.2zm1.6-1.1c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6z" />
+                </svg>
                 <span>Python</span>
               </li>
             </ul>
@@ -603,7 +597,9 @@
 
           <div class="skill-group">
             <h3 class="skill-group__title">
-              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false">
                 <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                 <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
@@ -612,19 +608,31 @@
             </h3>
             <ul class="skill-list" role="list">
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C11.5 3 7 9.5 7 14.5c0 3.3 2.2 6 5 6.5 2.8-.5 5-3.2 5-6.5C17 9.5 12.5 3 12 2zm0 18.5c-.2 0-.3 0-.5-.1V3.2c.2.3.4.7.5 1.1v16.2z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C11.5 3 7 9.5 7 14.5c0 3.3 2.2 6 5 6.5 2.8-.5 5-3.2 5-6.5C17 9.5 12.5 3 12 2zm0 18.5c-.2 0-.3 0-.5-.1V3.2c.2.3.4.7.5 1.1v16.2z" />
+                </svg>
                 <span>MongoDB</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 17.5L7 3.5l4 7.5L7.5 4l8 14.5 4-11.5L20 18.5c-.5 2.5-3 3.5-5 3.5-2.5 0-7-2-10.5-4.5z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.5 17.5L7 3.5l4 7.5L7.5 4l8 14.5 4-11.5L20 18.5c-.5 2.5-3 3.5-5 3.5-2.5 0-7-2-10.5-4.5z" />
+                </svg>
                 <span>Firebase</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5c0-1.66 4-3 9-3s9 1.34 9 3v14c0 1.66-4 3-9 3s-9-1.34-9-3V5z"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M3 5c0-1.66 4-3 9-3s9 1.34 9 3v14c0 1.66-4 3-9 3s-9-1.34-9-3V5z" />
+                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+                </svg>
                 <span>MySQL <span class="skill-note">(introductory)</span></span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.5 21l3.5-.96A8.93 8.93 0 0 0 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 13h-2v-4h2v4zm4 0h-2v-6h2v6z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.5 21l3.5-.96A8.93 8.93 0 0 0 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 13h-2v-4h2v4zm4 0h-2v-6h2v6z" />
+                </svg>
                 <span>PostgreSQL <span class="skill-note">(introductory)</span></span>
               </li>
             </ul>
@@ -632,34 +640,62 @@
 
           <div class="skill-group">
             <h3 class="skill-group__title">
-              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              <svg class="skill-group__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
               </svg>
               Tools
             </h3>
             <ul class="skill-list" role="list">
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 9v6M9 6h6a3 3 0 0 1 3 3v3"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="18" cy="6" r="3" />
+                  <circle cx="6" cy="18" r="3" />
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M6 9v6M9 6h6a3 3 0 0 1 3 3v3" />
+                </svg>
                 <span>Git</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
                 <span>GitHub</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 2.5L7 11.2l-4-3.1L1 9.5 4.5 12 1 14.5l2 1.4 4-3.1 10.5 8.7 4.5-2.2V4.7L17.5 2.5zm1 14.8L10.2 12 18.5 6.7v10.6z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.5 2.5L7 11.2l-4-3.1L1 9.5 4.5 12 1 14.5l2 1.4 4-3.1 10.5 8.7 4.5-2.2V4.7L17.5 2.5zm1 14.8L10.2 12 18.5 6.7v10.6z" />
+                </svg>
                 <span>Visual Studio Code</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11" />
+                  <circle cx="12" cy="12" r="3" fill="currentColor" />
+                </svg>
                 <span>Antigravity IDE</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.4 13.5c-.1-.7-.4-1.4-.9-1.9-.5-.5-1.2-.8-1.9-.9-.4-1.8-1.5-3.3-3.1-4.1-1.6-.8-3.5-.8-5.1 0C6.8 7.4 5.7 8.9 5.3 10.7c-.8.1-1.5.5-2 1.1-.5.6-.8 1.4-.8 2.2 0 1 .4 1.9 1.2 2.6.7.7 1.7 1.1 2.7 1.1h12.6c.9 0 1.8-.4 2.5-1 .7-.7 1.1-1.6 1.1-2.5 0-.3 0-.5-.2-.7z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M19.4 13.5c-.1-.7-.4-1.4-.9-1.9-.5-.5-1.2-.8-1.9-.9-.4-1.8-1.5-3.3-3.1-4.1-1.6-.8-3.5-.8-5.1 0C6.8 7.4 5.7 8.9 5.3 10.7c-.8.1-1.5.5-2 1.1-.5.6-.8 1.4-.8 2.2 0 1 .4 1.9 1.2 2.6.7.7 1.7 1.1 2.7 1.1h12.6c.9 0 1.8-.4 2.5-1 .7-.7 1.1-1.6 1.1-2.5 0-.3 0-.5-.2-.7z" />
+                </svg>
                 <span>Cloudflare Pages</span>
               </li>
               <li class="skill-item">
-                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+                <svg class="skill-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                  <path
+                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                </svg>
                 <span>Render</span>
               </li>
             </ul>
@@ -667,13 +703,19 @@
 
         </div>
       </div>
+
+      <!-- Section wave divider -->
+      <div class="section__wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="#59171B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
     </section>
 
     <!-- ===== CERTIFICATES SECTION ===== -->
     <section class="section certificates" id="certificates" aria-labelledby="certificates-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__tag">✦ Credentials</span>
           <h2 class="section__title" id="certificates-heading">Certificates</h2>
         </div>
         <p class="section__subtitle">Certifications and professional development programs I have completed.</p>
@@ -682,21 +724,18 @@
 
           <article class="cert-card" aria-label="Certificate: Introduction to AI Literacy and Responsible Use">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-ai-literacy.jpg"
+              <img src="assets/images/cert-ai-literacy.jpg"
                 alt="Certificate of Completion — Introduction to AI Literacy and Responsible Use, issued by ACHIEVE / Mapúa University on September 14, 2026"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-ai-literacy.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-ai-literacy.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -713,21 +752,18 @@
 
           <article class="cert-card" aria-label="Certificate: Less Hassle, More Hustle – Integrated OS">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-integrated-os-1.jpg"
+              <img src="assets/images/cert-integrated-os-1.jpg"
                 alt="Certificate of Participation — Less Hassle, More Hustle – Integrated OS, held on November 21, 2025"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-integrated-os-1.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-integrated-os-1.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -744,21 +780,18 @@
 
           <article class="cert-card" aria-label="Certificate: Be More Digi-TALINO – Integrated OS">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-integrated-os-2.jpg"
+              <img src="assets/images/cert-integrated-os-2.jpg"
                 alt="Certificate of Participation — Integrated OS: Be More Digi-TALINO, held on September 5, 2025"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-integrated-os-2.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-integrated-os-2.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -775,21 +808,18 @@
 
           <article class="cert-card" aria-label="Certificate: Symposium on Intellectual Property Awareness – BiPSU">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-bipsu-ip.jpg"
+              <img src="assets/images/cert-bipsu-ip.jpg"
                 alt="Certificate of Participation — Symposium on Intellectual Property (IP) Awareness, BiPSU, April 27-28, 2026"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-bipsu-ip.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-bipsu-ip.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -806,21 +836,18 @@
 
           <article class="cert-card" aria-label="Certificate: Thesis Preparation Seminar-Workshop – BiPSU">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-bipsu-thesis.jpg"
+              <img src="assets/images/cert-bipsu-thesis.jpg"
                 alt="Certificate of Completion — Thesis Preparation with the Use of Trending Tools and Industry Practices, BiPSU, October 6-7, 2025"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-bipsu-thesis.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-bipsu-thesis.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -837,21 +864,18 @@
 
           <article class="cert-card" aria-label="Certificate: Networking Basics – Cisco Networking Academy">
             <div class="cert-card__img-wrap">
-              <img
-                src="assets/images/cert-cisco-networking.jpg"
+              <img src="assets/images/cert-cisco-networking.jpg"
                 alt="Certificate of Course Completion — Networking Basics, Cisco Networking Academy, May 09, 2026"
-                class="cert-card__img"
-                loading="lazy"
-              />
+                class="cert-card__img" loading="lazy" />
               <div class="cert-card__overlay">
-                <a
-                  class="cert-card__view-btn"
-                  href="assets/images/cert-cisco-networking.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View full certificate in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a class="cert-card__view-btn" href="assets/images/cert-cisco-networking.jpg" target="_blank"
+                  rel="noopener noreferrer" aria-label="View full certificate in new tab">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                   View
                 </a>
               </div>
@@ -868,101 +892,85 @@
 
         </div>
       </div>
+
+      <!-- Section wave divider -->
+      <div class="section__wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="#59171B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="section__header"><span class="section__tag">✦ Get In Touch</span><h2 class="section__title" id="contact-heading">Contact</h2></div>
+        <div class="section__header">
+          <h2 class="section__title" id="contact-heading">Contact</h2>
+        </div>
         <p class="section__subtitle">
           Feel free to reach out for collaborations, opportunities, or just to connect.
         </p>
 
         <div class="contact__grid">
 
-          <a
-            class="contact__card"
-            href="mailto:welamaebacarisaslim@gmail.com"
-            aria-label="Send an email to Wela Mae B. Lim"
-          >
-            <div class="contact__card-banner">
-              <img
-                src="assets/images/contact-email.png"
-                alt="Google profile preview of Wela Mae Lim"
-                class="contact__card-banner-img"
-                loading="lazy"
-              />
-              <span class="contact__card-badge">Google Account</span>
-            </div>
+          <a class="contact__card" href="mailto:welamaebacarisaslim@gmail.com"
+            aria-label="Send an email to Wela Mae B. Lim">
             <div class="contact__card-body">
               <span class="contact__icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" focusable="false">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </span>
               <h3 class="contact__label">Email</h3>
               <p class="contact__value">welamaebacarisaslim@gmail.com</p>
-              <span class="contact__action-btn">Send Email <span class="contact__arrow" aria-hidden="true">→</span></span>
+              <span class="contact__action-btn">Send Email <span class="contact__arrow"
+                  aria-hidden="true">→</span></span>
             </div>
           </a>
 
-          <a
-            class="contact__card"
-            href="https://github.com/welamaebacarisaslim-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Wela Mae's GitHub profile (opens in new tab)"
-          >
-            <div class="contact__card-banner">
-              <img
-                src="assets/images/contact-github.jpg"
-                alt="GitHub profile snapshot of welamaebacarisaslim-dev"
-                class="contact__card-banner-img"
-                loading="lazy"
-              />
-              <span class="contact__card-badge">GitHub Profile</span>
-            </div>
+          <a class="contact__card" href="https://github.com/welamaebacarisaslim-dev" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit Wela Mae's GitHub profile (opens in new tab)">
             <div class="contact__card-body">
               <span class="contact__icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
                 </svg>
               </span>
               <h3 class="contact__label">GitHub</h3>
               <p class="contact__value">welamaebacarisaslim-dev</p>
-              <span class="contact__action-btn">Visit GitHub <span class="contact__arrow" aria-hidden="true">→</span></span>
+              <span class="contact__action-btn">Visit GitHub <span class="contact__arrow"
+                  aria-hidden="true">→</span></span>
             </div>
           </a>
 
-          <a
-            class="contact__card"
-            href="https://www.facebook.com/share/1CRsuYfDnr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Wela Mae's Facebook profile (opens in new tab)"
-          >
-            <div class="contact__card-banner">
-              <img
-                src="assets/images/contact-facebook.png"
-                alt="Facebook profile snapshot of Wela Mae Bacarisas Lim"
-                class="contact__card-banner-img"
-                loading="lazy"
-              />
-              <span class="contact__card-badge">Facebook Profile</span>
-            </div>
+          <a class="contact__card" href="https://www.facebook.com/share/1CRsuYfDnr/" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit Wela Mae's Facebook profile (opens in new tab)">
             <div class="contact__card-body">
               <span class="contact__icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" focusable="false">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
               </span>
               <h3 class="contact__label">Facebook</h3>
               <p class="contact__value">Wela Mae Bacarisas Lim</p>
-              <span class="contact__action-btn">Connect on FB <span class="contact__arrow" aria-hidden="true">→</span></span>
+              <span class="contact__action-btn">Connect on FB <span class="contact__arrow"
+                  aria-hidden="true">→</span></span>
             </div>
           </a>
 
         </div>
+      </div>
+
+      <!-- Section wave divider -->
+      <div class="section__wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="#59171B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </svg>
       </div>
     </section>
 
@@ -972,7 +980,6 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <img src="assets/images/wmbl-logo.svg" alt="WMBL Logo" class="footer__logo-img" width="30" height="30" />
-        <p class="footer__name">Wela Mae B. Lim</p>
       </div>
       <p class="footer__copy">&copy; <span id="footerYear"></span> All rights reserved.</p>
     </div>
@@ -980,4 +987,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
