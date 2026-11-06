@@ -143,3 +143,15 @@ if (themeToggle) {
     updateThemeButton(newTheme);
   });
 }
+
+// 6. Direct Email Compose Handler
+const emailCard = document.querySelector('.contact__card[href^="mailto:"]');
+if (emailCard) {
+  emailCard.addEventListener('click', e => {
+    const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!isMobile) {
+      e.preventDefault();
+      window.open('https://mail.google.com/mail/?view=cm&fs=1&to=welamaebacarisaslim@gmail.com', '_blank', 'noopener,noreferrer');
+    }
+  });
+}
