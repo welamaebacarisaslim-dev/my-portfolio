@@ -89,9 +89,12 @@
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 1);
 
   /* Typography for Light Surfaces (WCAG AAA High Contrast & Exceptional Readability) */
-  --color-text-title: #2A0609;  /* Deepest royal burgundy: 14:1 contrast on canvas */
-  --color-text-body: #381216;   /* Dark wine espresso: 11:1 contrast ratio */
-  --color-text-muted: #5E262B;  /* Deep rosewood: 7.5:1 contrast ratio */
+  --color-text-title: #2A0609;
+  /* Deepest royal burgundy: 14:1 contrast on canvas */
+  --color-text-body: #381216;
+  /* Dark wine espresso: 11:1 contrast ratio */
+  --color-text-muted: #5E262B;
+  /* Deep rosewood: 7.5:1 contrast ratio */
   --color-text-accent: #59171B;
 
   /* Card Gradients */
@@ -610,15 +613,16 @@ button {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: var(--container-max);
+  max-width: 1240px;
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-left: clamp(1.5rem, 4vw, 3.5rem);
+  padding-right: 0;
+  padding-bottom: 0;
   display: grid;
-  grid-template-columns: 1.15fr 0.95fr;
-  align-items: center;
-  gap: 2.5rem;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: flex-end;
+  gap: 2rem;
   flex: 1;
-  padding-bottom: 2rem;
 }
 
 /* Left Column: Content */
@@ -879,25 +883,29 @@ button {
   align-items: flex-end;
   justify-content: flex-end;
   width: 100%;
+  align-self: flex-end;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero__portrait-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   width: 100%;
-  max-width: 490px;
+  max-width: 530px;
+  margin-bottom: 0;
   animation: heroPopIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
 }
 
 /* Organic curved backdrop matching reference */
 .hero__portrait-wave-bg {
   position: absolute;
-  top: -20px;
-  right: -35px;
-  width: 110%;
+  top: -15px;
+  right: -25px;
+  width: 112%;
   height: 108%;
   z-index: 1;
   pointer-events: none;
@@ -925,22 +933,26 @@ button {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   overflow: visible;
   background: transparent;
   border: none;
   box-shadow: none;
   border-radius: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero__portrait-img {
   width: 100%;
+  max-width: 500px;
   height: auto;
-  max-height: 550px;
+  max-height: clamp(520px, 78vh, 680px);
   object-fit: contain;
-  object-position: bottom center;
+  object-position: bottom right;
   display: block;
-  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.30));
+  margin-bottom: 0;
+  filter: drop-shadow(-8px 10px 24px rgba(0, 0, 0, 0.25));
   transition: transform var(--transition-norm);
 }
 
@@ -948,24 +960,11 @@ button {
   transform: scale(1.02);
 }
 
-/* Layered Wave Divider */
-.hero__wave-divider {
+.hero .section__wave-divider {
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
-  z-index: 3;
-  width: 100%;
-  line-height: 0;
-  margin-top: -2px;
-}
-
-.hero__wave-divider svg {
-  display: block;
-  width: 100%;
-  height: clamp(80px, 11vw, 140px);
-}
-
-.hero__wave-fill {
-  fill: var(--color-bg);
-  transition: fill var(--transition-norm);
+  z-index: 1;
 }
 
 /* --------------------------------------------------------------------------
