@@ -242,9 +242,9 @@ button {
 }
 
 .nav__logo-img {
-  height: 34px;
+  height: 38px;
   width: auto;
-  max-width: 65px;
+  max-width: 75px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(254, 215, 184, 0.35));
   transition: transform var(--transition-fast);
@@ -789,7 +789,7 @@ button {
   color: var(--color-text-muted);
   line-height: 1.7;
   max-width: 530px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
   animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.50s both;
@@ -2938,9 +2938,17 @@ button {
 }
 
 [data-theme="light"] .nav__menu {
-  background-color: #FFFFFF;
-  border: 1px solid rgba(89, 23, 27, 0.14);
-  box-shadow: 0 16px 40px rgba(89, 23, 27, 0.12);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  [data-theme="light"] .nav__menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(89, 23, 27, 0.14);
+    box-shadow: 0 16px 40px rgba(89, 23, 27, 0.12);
+  }
 }
 
 [data-theme="light"] .hamburger,
