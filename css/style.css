@@ -542,9 +542,10 @@ button {
   min-height: calc(100vh - 72px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /* Decorative Background Elements */
@@ -615,13 +616,12 @@ button {
   width: 100%;
   max-width: 1240px;
   margin-inline: auto;
-  padding-left: clamp(1.5rem, 4vw, 3.5rem);
-  padding-right: 0;
-  padding-bottom: 0;
+  margin-block: auto;
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: flex-end;
-  gap: 2rem;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 2.5rem;
   flex: 1;
 }
 
@@ -629,11 +629,10 @@ button {
 .hero__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   max-width: 600px;
-  margin-inline: auto;
-  padding-top: 1rem;
+  align-self: center;
 }
 
 /* Modern Status Pill Badge */
@@ -702,15 +701,15 @@ button {
 
 .hero__name {
   font-family: var(--font-serif);
-  font-size: clamp(2.6rem, 5.2vw, 4.2rem);
+  font-size: clamp(2rem, 3.8vw, 3.3rem);
   font-weight: 800;
   color: #FFF2E7;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.08;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+  white-space: nowrap;
+  display: block;
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 35px rgba(254, 215, 184, 0.22);
   animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
 }
@@ -875,33 +874,53 @@ button {
   font-size: 0.8rem;
 }
 
-/* Right Column: Frameless Editorial Portrait with Organic Wave Backdrop */
+/* Right Column: Frameless Editorial Portrait */
 .hero__visual {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  align-self: flex-end;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  align-self: center;
 }
 
 .hero__portrait-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 530px;
-  margin-bottom: 0;
+  max-width: 480px;
   animation: heroPopIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
 }
 
-/* Organic curved backdrop matching reference */
+/* Ambient backdrop halo in Dark Mode */
+.hero__portrait-backdrop {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  right: 8%;
+  bottom: 12%;
+  background: radial-gradient(circle at center, rgba(254, 215, 184, 0.20) 0%, rgba(89, 23, 27, 0.35) 60%, transparent 80%);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-theme="light"] .hero__portrait-backdrop {
+  display: none;
+}
+
+/* Organic curved backdrop in Light Mode matching reference */
 .hero__portrait-wave-bg {
+  display: none;
+}
+
+[data-theme="light"] .hero__portrait-wave-bg {
+  display: block;
   position: absolute;
   top: -15px;
   right: -25px;
@@ -918,10 +937,6 @@ button {
   display: block;
 }
 
-.hero__wave-shape {
-  fill: url(#heroBgGradDark);
-}
-
 [data-theme="light"] .hero__wave-shape {
   fill: url(#heroBgGradLight);
 }
@@ -932,8 +947,8 @@ button {
   z-index: 2;
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   overflow: visible;
   background: transparent;
   border: none;
@@ -945,14 +960,16 @@ button {
 
 .hero__portrait-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 460px;
   height: auto;
-  max-height: clamp(520px, 78vh, 680px);
+  max-height: clamp(460px, 66vh, 580px);
   object-fit: contain;
-  object-position: bottom right;
+  object-position: center bottom;
   display: block;
-  margin-bottom: 0;
-  filter: drop-shadow(-8px 10px 24px rgba(0, 0, 0, 0.25));
+  margin-inline: auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 98%);
+  mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 98%);
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.25));
   transition: transform var(--transition-norm);
 }
 
@@ -961,7 +978,7 @@ button {
 }
 
 .hero .section__wave-divider {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
   position: relative;
   z-index: 1;
@@ -2168,6 +2185,10 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .hero__name {
+    white-space: normal;
   }
 
   .hero__role-wrapper {
