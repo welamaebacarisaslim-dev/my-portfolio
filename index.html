@@ -85,7 +85,7 @@
   <main id="main-content">
 
     <section class="hero" id="home" aria-labelledby="hero-heading">
-      <!-- Decorative Background Elements -->
+      <!-- Decorative Background Elements matching reference -->
       <div class="hero__decorations" aria-hidden="true">
         <!-- Top-left curved ribbon swirls -->
         <svg class="hero__swirl-left" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,17 +97,50 @@
             stroke-linecap="round" opacity="0.9" />
         </svg>
 
-        <!-- Left 4x3 dot grid -->
-        <div class="hero__dot-grid hero__dot-grid--left">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <!-- Bottom-right soft flowing wave ribbons -->
+        <svg class="hero__ribbon-bottom-right" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 160 C120 180, 240 140, 360 170 C420 185, 470 160, 500 130" stroke="currentColor" stroke-width="28" opacity="0.10" stroke-linecap="round" />
+          <path d="M60 185 C180 200, 300 165, 420 190 C460 198, 485 185, 500 160" stroke="currentColor" stroke-width="14" opacity="0.14" stroke-linecap="round" />
+          <path d="M140 196 C240 205, 360 185, 460 198 L500 185" stroke="currentColor" stroke-width="5" opacity="0.22" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- Left Column: Professional Portrait Visual strictly matching reference -->
+      <div class="hero__visual">
+        <div class="hero__portrait-wrapper">
+          <div class="hero__portrait-backdrop" aria-hidden="true"></div>
+
+          <!-- Organic curved backdrop matching reference (for light mode) -->
+          <div class="hero__portrait-wave-bg" aria-hidden="true">
+            <svg viewBox="0 0 500 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="heroBgGradLight" x1="0.1" y1="0" x2="0.8" y2="1">
+                  <stop offset="0%" stop-color="#6E2026" />
+                  <stop offset="50%" stop-color="#59171B" />
+                  <stop offset="100%" stop-color="#420F13" />
+                </linearGradient>
+              </defs>
+              <!-- Deep wine organic lobe flowing from left edge -->
+              <path d="M0 0 L260 0 C380 90, 480 200, 460 340 C440 470, 360 550, 260 650 L0 650 Z"
+                class="hero__wave-shape" />
+              <!-- Subtle accent ribbons along curved boundary -->
+              <path d="M0 35 C140 30, 260 70, 330 150 C380 210, 400 300, 390 380"
+                stroke="#E8D3C3" stroke-width="3.5" opacity="0.65" stroke-linecap="round" fill="none" />
+              <path d="M0 75 C110 70, 210 110, 270 180"
+                stroke="#FED7B8" stroke-width="2" opacity="0.5" stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+
+          <div class="hero__portrait-frame">
+            <img class="hero__portrait-img" src="assets/images/wela-hero-cutout.png" alt="Portrait of Wela Mae B. Lim"
+              width="460" height="580" loading="eager" />
+          </div>
+
         </div>
       </div>
 
+      <!-- Right Column: Content -->
       <div class="hero__container">
-        <!-- Left Content Column -->
         <div class="hero__content">
 
           <p class="hero__eyebrow">Hi, I'm</p>
@@ -125,37 +158,11 @@
         </div>
       </div>
 
-      <!-- Right Column: Professional Portrait Visual strictly matching reference -->
-      <div class="hero__visual">
-        <div class="hero__portrait-wrapper">
-          <div class="hero__portrait-backdrop" aria-hidden="true"></div>
-
-          <!-- Organic curved backdrop matching reference (for light mode) -->
-          <div class="hero__portrait-wave-bg" aria-hidden="true">
-            <svg viewBox="0 0 500 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="heroBgGradLight" x1="0.1" y1="0" x2="0.8" y2="1">
-                  <stop offset="0%" stop-color="#6E2026" />
-                  <stop offset="50%" stop-color="#59171B" />
-                  <stop offset="100%" stop-color="#420F13" />
-                </linearGradient>
-              </defs>
-              <path d="M140 0 C70 130, 20 280, 50 430 C75 530, 140 600, 220 650 L500 650 L500 0 Z" class="hero__wave-shape" />
-            </svg>
-          </div>
-
-          <div class="hero__portrait-frame">
-            <img class="hero__portrait-img" src="assets/images/wela-hero-cutout.png" alt="Portrait of Wela Mae B. Lim"
-              width="460" height="580" loading="eager" />
-          </div>
-
-        </div>
-      </div>
-
       <!-- Section wave divider (partition between Hero and About) -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>
@@ -342,7 +349,8 @@
       <!-- Section wave divider -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>
@@ -518,7 +526,8 @@
       <!-- Section wave divider -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>
@@ -704,7 +713,8 @@
       <!-- Section wave divider -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>
@@ -893,7 +903,8 @@
       <!-- Section wave divider -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>
@@ -966,7 +977,8 @@
       <!-- Section wave divider -->
       <div class="section__wave-divider" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5" vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round"/>
+          <path d="M0 42 C240 10 480 55 720 30 C960 5 1200 50 1440 20" stroke="currentColor" stroke-width="3.5"
+            vector-effect="non-scaling-stroke" fill="none" stroke-linecap="round" />
         </svg>
       </div>
     </section>

@@ -566,6 +566,19 @@ button {
   animation: swirlFloat 10s ease-in-out infinite;
 }
 
+/* Bottom-Right Soft Flowing Ribbons matching reference */
+.hero__ribbon-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: clamp(280px, 36vw, 520px);
+  height: clamp(100px, 18vh, 220px);
+  pointer-events: none;
+  z-index: 1;
+  color: var(--color-primary);
+  opacity: 0.65;
+}
+
 /* Left Dot Grid */
 .hero__dot-grid--left {
   position: absolute;
@@ -611,25 +624,27 @@ button {
 /* Hero Container */
 .hero__container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   max-width: 1240px;
   margin-inline: auto;
   padding-inline: clamp(1.5rem, 4vw, 3.5rem);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   min-height: calc(100vh - 120px);
 }
 
-/* Left Column: Content */
+/* Right Content Column matching reference */
 .hero__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   max-width: 580px;
-  z-index: 3;
+  width: 100%;
+  margin-left: auto;
+  z-index: 4;
 }
 
 /* Modern Status Pill Badge */
@@ -871,17 +886,18 @@ button {
   font-size: 0.8rem;
 }
 
-/* Right Column: Frameless Editorial Portrait strictly matching reference */
+/* Left Column: Frameless Editorial Portrait strictly matching reference */
 .hero__visual {
   position: absolute;
-  right: 0;
+  left: 0;
+  right: auto;
   bottom: 0;
   height: clamp(520px, 86vh, 730px);
   width: clamp(380px, 44vw, 620px);
   z-index: 2;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
   pointer-events: none;
 }
 
@@ -891,15 +907,16 @@ button {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
   animation: heroPopIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
 }
 
-/* Ambient backdrop halo in Dark Mode */
+/* Ambient backdrop halo in Dark Mode (placed on the left behind portrait) */
 .hero__portrait-backdrop {
   position: absolute;
   top: 15%;
-  right: 5%;
+  left: 5%;
+  right: auto;
   width: 440px;
   height: 440px;
   background: radial-gradient(circle at center, rgba(254, 215, 184, 0.18) 0%, rgba(89, 23, 27, 0.40) 55%, transparent 75%);
@@ -913,7 +930,7 @@ button {
   display: none;
 }
 
-/* Organic curved backdrop in Light Mode matching reference */
+/* Organic curved backdrop in Light Mode matching reference (on the left) */
 .hero__portrait-wave-bg {
   display: none;
 }
@@ -922,7 +939,8 @@ button {
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  right: auto;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -949,7 +967,7 @@ button {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
   overflow: visible;
   background: transparent;
   border: none;
@@ -964,11 +982,11 @@ button {
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  object-position: right bottom;
+  object-position: left bottom;
   display: block;
   margin: 0;
   padding: 0;
-  filter: drop-shadow(-10px 0 25px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(10px 0 25px rgba(0, 0, 0, 0.25));
   transition: transform var(--transition-norm);
 }
 
@@ -2187,13 +2205,16 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     min-height: auto;
     padding-inline: 1.5rem;
     width: 100%;
+    order: 1;
   }
 
   .hero__content {
     max-width: 100%;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2216,6 +2237,7 @@ button {
 
   .hero__visual {
     position: relative;
+    left: auto;
     right: auto;
     bottom: auto;
     width: 100%;
@@ -2225,6 +2247,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    order: 2;
   }
 
   .hero__portrait-wrapper {
@@ -2232,6 +2255,7 @@ button {
     max-width: 340px;
     height: auto;
     margin-inline: auto;
+    justify-content: center;
   }
 
   .hero__portrait-img {
@@ -2591,12 +2615,18 @@ button {
 }
 
 [data-theme="light"] .hero__portrait-backdrop {
-  background: linear-gradient(135deg, rgba(244, 222, 205, 0.55) 0%, rgba(89, 23, 27, 0.10) 100%);
+  display: none;
 }
 
 [data-theme="light"] .hero__portrait-frame {
-  border: 2px solid rgba(89, 23, 27, 0.16);
-  box-shadow: 0 16px 40px rgba(89, 23, 27, 0.12);
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+[data-theme="light"] .hero__ribbon-bottom-right {
+  color: #59171B;
+  opacity: 0.22;
 }
 
 [data-theme="light"] .hero__dot-grid .dot {
