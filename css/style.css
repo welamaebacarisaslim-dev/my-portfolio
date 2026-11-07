@@ -2304,8 +2304,15 @@ button {
   }
 
   .hero .section__wave-divider {
+    order: 3;
     position: relative;
-    margin-top: 2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .hero__swirl-left {
+    display: none;
   }
 
   .project-featured {
