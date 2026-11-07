@@ -97,56 +97,22 @@
             stroke-linecap="round" opacity="0.9" />
         </svg>
 
-        <!-- Bottom-right soft flowing wave ribbons -->
-        <svg class="hero__ribbon-bottom-right" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0 160 C120 180, 240 140, 360 170 C420 185, 470 160, 500 130" stroke="currentColor" stroke-width="28" opacity="0.10" stroke-linecap="round" />
-          <path d="M60 185 C180 200, 300 165, 420 190 C460 198, 485 185, 500 160" stroke="currentColor" stroke-width="14" opacity="0.14" stroke-linecap="round" />
-          <path d="M140 196 C240 205, 360 185, 460 198 L500 185" stroke="currentColor" stroke-width="5" opacity="0.22" stroke-linecap="round" />
+        <!-- Bottom-left soft flowing wave ribbons -->
+        <svg class="hero__ribbon-bottom-left" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M500 160 C380 180, 260 140, 140 170 C80 185, 30 160, 0 130" stroke="currentColor" stroke-width="28" opacity="0.10" stroke-linecap="round" />
+          <path d="M440 185 C320 200, 200 165, 80 190 C40 198, 15 185, 0 160" stroke="currentColor" stroke-width="14" opacity="0.14" stroke-linecap="round" />
+          <path d="M360 196 C260 205, 140 185, 40 198 L0 185" stroke="currentColor" stroke-width="5" opacity="0.22" stroke-linecap="round" />
         </svg>
       </div>
 
-      <!-- Left Column: Professional Portrait Visual strictly matching reference -->
-      <div class="hero__visual">
-        <div class="hero__portrait-wrapper">
-          <div class="hero__portrait-backdrop" aria-hidden="true"></div>
-
-          <!-- Organic curved backdrop matching reference (for light mode) -->
-          <div class="hero__portrait-wave-bg" aria-hidden="true">
-            <svg viewBox="0 0 500 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="heroBgGradLight" x1="0.1" y1="0" x2="0.8" y2="1">
-                  <stop offset="0%" stop-color="#6E2026" />
-                  <stop offset="50%" stop-color="#59171B" />
-                  <stop offset="100%" stop-color="#420F13" />
-                </linearGradient>
-              </defs>
-              <!-- Deep wine organic lobe flowing from left edge -->
-              <path d="M0 0 L260 0 C380 90, 480 200, 460 340 C440 470, 360 550, 260 650 L0 650 Z"
-                class="hero__wave-shape" />
-              <!-- Subtle accent ribbons along curved boundary -->
-              <path d="M0 35 C140 30, 260 70, 330 150 C380 210, 400 300, 390 380"
-                stroke="#E8D3C3" stroke-width="3.5" opacity="0.65" stroke-linecap="round" fill="none" />
-              <path d="M0 75 C110 70, 210 110, 270 180"
-                stroke="#FED7B8" stroke-width="2" opacity="0.5" stroke-linecap="round" fill="none" />
-            </svg>
-          </div>
-
-          <div class="hero__portrait-frame">
-            <img class="hero__portrait-img" src="assets/images/wela-hero-cutout.png" alt="Portrait of Wela Mae B. Lim"
-              width="460" height="580" loading="eager" />
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Right Column: Content -->
+      <!-- Center Content Column: Spacious, Centered Typography -->
       <div class="hero__container">
         <div class="hero__content">
 
           <p class="hero__eyebrow">Hi, I'm</p>
           <h1 class="hero__name" id="hero-heading">WELA MAE B. LIM</h1>
 
-          <!-- Role Banner & Horizontal Divider Line -->
+          <!-- Role Banner & Horizontal Divider Line centered -->
           <div class="hero__role-wrapper" aria-label="Aspiring Web Developer">
             <span class="hero__role-title">ASPIRING WEB DEVELOPER</span>
             <span class="hero__role-divider" aria-hidden="true"></span>
@@ -155,6 +121,47 @@
           <p class="hero__intro">
             Exploring technology and growing one step at a time.
           </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Professional Portrait Visual with Contoured Backdrop (Light in Dark Mode, Wine in Light Mode) -->
+      <div class="hero__visual">
+        <div class="hero__portrait-wrapper">
+          <div class="hero__portrait-backdrop" aria-hidden="true"></div>
+
+          <!-- Organic curved backdrop (Light Peach in Dark Mode, Burgundy in Light Mode) -->
+          <div class="hero__portrait-wave-bg" aria-hidden="true">
+            <svg viewBox="0 0 500 650" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <defs>
+                <!-- Light mode: deep wine/burgundy gradient -->
+                <linearGradient id="heroWaveGradLight" x1="0.1" y1="0" x2="0.8" y2="1">
+                  <stop offset="0%" stop-color="#6E2026" />
+                  <stop offset="50%" stop-color="#59171B" />
+                  <stop offset="100%" stop-color="#420F13" />
+                </linearGradient>
+                <!-- Dark mode: luminous light peach & cream gradient -->
+                <linearGradient id="heroWaveGradDark" x1="0.1" y1="0" x2="0.85" y2="1">
+                  <stop offset="0%" stop-color="#FFF2E7" />
+                  <stop offset="45%" stop-color="#FED7B8" />
+                  <stop offset="100%" stop-color="#EAA989" />
+                </linearGradient>
+              </defs>
+              <!-- Organic curved lobe anchored to right edge behind photo -->
+              <path d="M500 0 L220 0 C120 100, 30 220, 40 360 C50 480, 140 560, 240 650 L500 650 Z"
+                class="hero__wave-shape" />
+              <!-- Accent ribbons along curved boundary -->
+              <path class="hero__wave-accent hero__wave-accent--1" d="M500 35 C360 30, 240 70, 170 150 C120 210, 100 300, 110 380"
+                stroke-width="3.5" stroke-linecap="round" fill="none" />
+              <path class="hero__wave-accent hero__wave-accent--2" d="M500 75 C390 70, 290 110, 230 180"
+                stroke-width="2" stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+
+          <div class="hero__portrait-frame">
+            <img class="hero__portrait-img" src="assets/images/wela-hero-cutout.png" alt="Portrait of Wela Mae B. Lim"
+              width="460" height="580" loading="eager" />
+          </div>
+
         </div>
       </div>
 
